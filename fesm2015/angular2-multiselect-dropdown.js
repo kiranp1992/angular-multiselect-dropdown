@@ -2440,21 +2440,32 @@ class AngularMultiSelect {
          */
         obj => {
             /** @type {?} */
-            let arr = obj.list.filter((/**
-             * @param {?} t
-             * @return {?}
-             */
-            t => {
-                return t.itemName.toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
-            }));
+            let arr = [];
+            if (obj[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1) {
+                arr = obj.list;
+            }
+            else {
+                arr = obj.list.filter((/**
+                 * @param {?} t
+                 * @return {?}
+                 */
+                t => {
+                    return t[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
+                }));
+            }
             obj.list = arr;
-            return arr.some((/**
-             * @param {?} cat
-             * @return {?}
-             */
-            cat => {
-                return cat.itemName.toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
-            }));
+            if (obj[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1) {
+                return arr;
+            }
+            else {
+                return arr.some((/**
+                 * @param {?} cat
+                 * @return {?}
+                 */
+                cat => {
+                    return cat[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
+                }));
+            }
         }));
         console.log(this.groupedData);
     }

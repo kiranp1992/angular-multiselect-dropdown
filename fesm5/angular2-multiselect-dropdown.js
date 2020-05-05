@@ -2649,21 +2649,32 @@ var AngularMultiSelect = /** @class */ (function () {
          */
         function (obj) {
             /** @type {?} */
-            var arr = obj.list.filter((/**
-             * @param {?} t
-             * @return {?}
-             */
-            function (t) {
-                return t.itemName.toLowerCase().indexOf(_this.filter.toLowerCase()) > -1;
-            }));
+            var arr = [];
+            if (obj[_this.settings.labelKey].toLowerCase().indexOf(_this.filter.toLowerCase()) > -1) {
+                arr = obj.list;
+            }
+            else {
+                arr = obj.list.filter((/**
+                 * @param {?} t
+                 * @return {?}
+                 */
+                function (t) {
+                    return t[_this.settings.labelKey].toLowerCase().indexOf(_this.filter.toLowerCase()) > -1;
+                }));
+            }
             obj.list = arr;
-            return arr.some((/**
-             * @param {?} cat
-             * @return {?}
-             */
-            function (cat) {
-                return cat.itemName.toLowerCase().indexOf(_this.filter.toLowerCase()) > -1;
-            }));
+            if (obj[_this.settings.labelKey].toLowerCase().indexOf(_this.filter.toLowerCase()) > -1) {
+                return arr;
+            }
+            else {
+                return arr.some((/**
+                 * @param {?} cat
+                 * @return {?}
+                 */
+                function (cat) {
+                    return cat[_this.settings.labelKey].toLowerCase().indexOf(_this.filter.toLowerCase()) > -1;
+                }));
+            }
         }));
         console.log(this.groupedData);
     };
