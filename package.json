@@ -1,0 +1,65 @@
+{
+  "_from": "angular2-multiselect-dropdown@4.6.0",
+  "_id": "angular2-multiselect-dropdown@4.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kO3Tin7ynYjKiwKGCunpOzjAZY8yE3BiPbcq73f7yvIGXnQyvUwUqsgPty5mManU31dhxW93/uckeEKo3ex30A==",
+  "_location": "/angular2-multiselect-dropdown",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "angular2-multiselect-dropdown@4.6.0",
+    "name": "angular2-multiselect-dropdown",
+    "escapedName": "angular2-multiselect-dropdown",
+    "rawSpec": "4.6.0",
+    "saveSpec": null,
+    "fetchSpec": "4.6.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular2-multiselect-dropdown/-/angular2-multiselect-dropdown-4.6.0.tgz",
+  "_shasum": "2ca164c323a3d9628fea2fa9af1cdc074a838598",
+  "_spec": "angular2-multiselect-dropdown@4.6.0",
+  "_where": "/home/dinesh/dev/projects/bsh",
+  "author": {
+    "name": "Pradeep Terli"
+  },
+  "bugs": {
+    "url": "https://github.com/CuppaLabs/angular2-multiselect-dropdown/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.4.0",
+    "tslib": "^1.9.0"
+  },
+  "deprecated": false,
+  "description": "Angular 2 and angular 4 and angular 6 multiselect dropdown component.",
+  "devDependencies": {},
+  "es2015": "fesm2015/angular2-multiselect-dropdown.js",
+  "esm2015": "esm2015/angular2-multiselect-dropdown.js",
+  "esm5": "esm5/angular2-multiselect-dropdown.js",
+  "fesm2015": "fesm2015/angular2-multiselect-dropdown.js",
+  "fesm5": "fesm5/angular2-multiselect-dropdown.js",
+  "homepage": "https://github.com/CuppaLabs/angular2-multiselect-dropdown#readme",
+  "keywords": [
+    "angular 2 multiselect dropdown",
+    "angular 4 multiselect dropdown",
+    "angular multiselect",
+    "angular dropdown",
+    "angular 6 dropdown multiselect"
+  ],
+  "license": "MIT",
+  "main": "bundles/angular2-multiselect-dropdown.umd.js",
+  "metadata": "angular2-multiselect-dropdown.metadata.json",
+  "module": "fesm5/angular2-multiselect-dropdown.js",
+  "name": "angular2-multiselect-dropdown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuppaLabs/angular2-multiselect-dropdown.git"
+  },
+  "sideEffects": false,
+  "typings": "angular2-multiselect-dropdown.d.ts",
+  "version": "4.6.0"
+}
