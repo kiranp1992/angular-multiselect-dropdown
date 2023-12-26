@@ -1965,6 +1965,7 @@ class AngularMultiSelect {
         this.isInfiniteFilterSelectAll = false;
         this.chunkIndex = [];
         this.cachedItems = [];
+		this.selectedItems = [];
         this.groupCachedItems = [];
         this.itemHeight = 41.6;
         this.filterLength = 0;
