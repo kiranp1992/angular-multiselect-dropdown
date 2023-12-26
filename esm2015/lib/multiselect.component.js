@@ -239,7 +239,10 @@ export class AngularMultiSelect {
         /** @type {?} */
         let found = this.isSelected(item);
         /** @type {?} */
-        let limit = this.selectedItems.length < this.settings.limitSelection ? true : false;
+let limit = false;
+			if (this.selectedItems && this.selectedItems.length < this.settings.limitSelection) {
+			 limit = true
+			}
         if (!found) {
             if (this.settings.limitSelection) {
                 if (limit) {

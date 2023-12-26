@@ -2280,7 +2280,11 @@ var AngularMultiSelect = /** @class */ (function () {
         /** @type {?} */
         var found = this.isSelected(item);
         /** @type {?} */
-        var limit = this.selectedItems.length < this.settings.limitSelection ? true : false;
+        
+        var limit = false;
+			if (this.selectedItems && this.selectedItems.length < this.settings.limitSelection) {
+			 limit = true
+			}
         if (!found) {
             if (this.settings.limitSelection) {
                 if (limit) {
